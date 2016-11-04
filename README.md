@@ -1,0 +1,1 @@
+# Android_SimpleBlueToothDemo - A small and simple demo to illustrate the use of Bluetooth with an Android device. Note that this example requires a real device to run. It will not run on the emulator.
