@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            // If we did actually disable it 
+            // If we did actually disable it
 
             Toast.makeText(getApplicationContext(),"Bluetooth is off", Toast.LENGTH_LONG).show();
         }
@@ -85,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
         // check to see if blue tooth is enabled or disabled when we run this app. We show a toast message if it is turned on.
         // If its not we will attempt to turn it on using an intent for action_request_enable
         // To pass control to the OS to try to enable bluetooth for us.
+
+        // We need to get the default adapter otherwise the app will crash.
+        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
         if ( bluetoothAdapter.isEnabled() ) {
 
